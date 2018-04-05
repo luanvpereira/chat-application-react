@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Ubuntu;
+}
+
+#container {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+}
+
+#main {
+	width: 70%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+#messages-list ul {
+	padding: 15px 20px;
+}
+
+#sidebar {
+	width: 30%;
+	float: left;
+	padding: 0;
+	height: 100%;
+	border-right: 1px solid #1bb99a;
+}
+
+#sidebar li {
+	padding: 20px;
+	border-bottom: 1px solid #1bb99a;
+	background-color: #f4f4f4;
+	cursor: pointer;
+	transition: color ease-in 0.2s, background-color ease-out 0.3s;
+}
+
+#sidebar li:hover {
+	background-color: #1bb99a;
+	color: #fff;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 17px;
+	color: #1bb99a;
+	padding: 20px;
+	position: relative;
+	border-bottom: 1px solid #1bb99a;
+	background-color: #1bb99a;
+	color: #fff;
+	text-align: center;
+}
