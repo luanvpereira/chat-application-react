@@ -17,7 +17,7 @@ class MessageListComponent extends React.Component {
         const padding = 30;
         const newScrollPosition = messagesListRect.height > messagesContainerRect.height ? diff + padding : 0;
         messagesContainer.scrollTop = newScrollPosition;
-    }
+    }   
 
     render() {  
         const { messages } = this.props;
