@@ -2,7 +2,7 @@ import * as types from '../constants/ActionTypes'
 import { addUser, messageReceived, populateUsersList } from '../actions'
 
 const setupSocket = (dispatch, username) => {
-    const socket = new WebSocket('ws://localhost:8989')
+    const socket = new WebSocket('ws://6542c876.ngrok.io')
 
     socket.onopen = () => {
         socket.send(JSON.stringify({

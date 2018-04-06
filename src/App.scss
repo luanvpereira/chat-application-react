@@ -19,7 +19,13 @@
 	position: relative;
 }
 
+#messages-list {
+	height: calc(100%);
+}
+
 #messages-list ul {
+	height: calc(100% - 118px);
+	overflow-y: auto;
 	padding: 15px 20px;
 }
 
