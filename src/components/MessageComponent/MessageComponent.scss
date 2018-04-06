@@ -25,12 +25,17 @@
 		font-size: 13px;
 		font-weight: 500;
 		line-height: 16px;
-		font-family: Ubuntu;
+		// font-family: Ubuntu;
 
 		> i {
 			font-weight: 700;
 			display: inline-block;
 			margin-right: 5px;
+		}
+
+		> a {
+			font-weight: 700;
+			color: #666;
 		}
 	}
 }

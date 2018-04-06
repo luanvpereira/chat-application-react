@@ -2,20 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types'
 import MessageComponent from '../MessageComponent'
 
-const MessageListComponent = ({messages}) => (
-    <section id="messages-list">
-        <h2 className="title">Messages list</h2>
+const MessageListComponent = ({messages}) => {
+    return (
+        <section id="messages-list">
+            <h2 className="title">Messages list</h2>
 
-        <ul>
-            {messages.map(message => (
-                <MessageComponent
-                    key={message.id}
-                    {...message}
-                />
-            ))}
-        </ul>
-    </section>
-)
+            <ul>
+                {messages.map(message => (
+                    <MessageComponent
+                        key={message.id}
+                        {...message}
+                    />
+                ))}
+            </ul>
+        </section>
+    )
+}
 
 MessageListComponent.propTypes = {
     messages: PropTypes.arrayOf(

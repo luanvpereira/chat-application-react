@@ -42,58 +42,7 @@
 		overflow: hidden;
 		display: block;
 
-		font-family: Ubuntu;
-		font-size: 14px;
-		color: #333;
-		font-weight: 500;
-		resize: none;
-	}
-}
-
-.NewMessage {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	margin-left: 0px;
-	border-top: 1px solid #1bb99a;
-	background-color: #f4f4f4;
-	padding: 20px;
-	background-color: #f4f4f4;
-
-	&Container {
-		position: relative;
-		display: block;
-		will-change: height;
-		max-height: 121px;
-		overflow-y: auto;
-
-		> div {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			z-index: 2;
-			min-height: 16px;
-		}
-	}
-
-	&Input {
-		position: relative;
-		z-index: 3;
-	}
-
-	&Input, &Container > div {
-		will-change: height;
-		transition: height 0.1s ease;
-		background-color: #f4f4f4;
-		width: 100%;
-		border: none;
-		box-sizing: border-box;
-		outline: 0;
-		height: auto;
-		overflow: hidden;
-		display: block;
-
-		font-family: Ubuntu;
+		// font-family: Ubuntu;
 		font-size: 14px;
 		color: #333;
 		font-weight: 500;
