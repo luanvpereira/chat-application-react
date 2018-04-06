@@ -23,7 +23,12 @@
 	height: calc(100%);
 }
 
-#messages-list ul {
+.messagesList {
+	display: block;
+	overflow: hidden;
+}
+
+.messagesContainer {
 	height: calc(100% - 118px);
 	overflow-y: auto;
 	padding: 15px 20px;

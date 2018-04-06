@@ -13,8 +13,20 @@ const MessageComponent = ({message = '', author = ''}) => {
     }
 
     const linkFormatter = (html) => {
-        const linkPattern = /(https?:\/\/[^\s]+)/g;
-        return html.replace(linkPattern, '<a href="$1" target="_blank">$1</a>')
+        const linkHttpPattern   = /(https?:\/\/[^\s]+)/g;
+        const linkWWWPattern    = /(www\.[^\s]+)/g;
+        const tag               = '<a href="$1" target="_blank">$1</a>';
+
+        if(linkHttpPattern.test(html)) {
+            return html.replace(linkHttpPattern, tag)
+        }
+
+        if(linkWWWPattern.test(html)) {
+            return html.replace(linkWWWPattern, tag)
+        }
+
+        return html;
+
     }
 
     const getMessage = (author, message) => {
@@ -25,10 +37,10 @@ const MessageComponent = ({message = '', author = ''}) => {
     }
 
     return (
-        <li className={ klass }>
+        <div className={ klass }>
             <p className={"MessageText"} dangerouslySetInnerHTML={getMessage(author, message)}>
             </p>
-        </li>
+        </div>
     )
 }
 
