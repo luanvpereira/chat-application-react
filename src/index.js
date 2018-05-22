@@ -8,7 +8,6 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers';
-import { addUser } from './actions';
 import setupSocket from './setupSocket'
 import username from './utils/name'
 import handleNewMessage from './utils/handleNewMessage'
